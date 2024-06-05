@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('PIXELS.jpg');
+        height: 1000px;
+        margin: 12px;
+        color: #2aa04d;
+        font-family: 'Balthazar', serif;
+    }
+
+    .left {
+        position: absolute;
+        left: 17px;
+        top: 35px;
+        display: inline-block;
+        /* border: 1px solid rgb(180, 148, 148); */
+        margin: -18px 0px;
+
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 21px auto;
+        /* border: 1px solid brown; */
+    }
+
+    .right {
+        position: absolute;
+        right: 12px;
+        top: 38px;
+        display: inline-block;
+        /* border: 1px solid green; */
+        margin-top: -17px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: #d8f2ca;
+        text-decoration: none;
+        padding: 12px 18px;
+        font-size: 29px;
+
+    }
+
+    .mid a:hover {
+        text-decoration: underline;
+        color: rgb(126, 119, 119);
+        background-color: rgb(235, 244, 180);
+        border-radius: 16px;
+    }
+
+    .left img {
+        width: 95px;
+        filter: invert(100%);
+        /*to convert the color of image to black to white or vice versa*/
+        margin: -12px;
+        padding: 12px;
+        /* margin-top: -15px;
+        margin-left: -12px; */
+    }
+
+    .left div {
+        position: absolute;
+        left: 4px;
+        top: 87px;
+        text-align: center;
+        color: #d8f2ca;
+        font-size: 20px;
+        margin: -6px;
+        /* line-height: -1px; */
+
+    }
+
+    .btn {
+        margin: 9px 21px;
+        padding: 4px;
+        width: 120px;
+        color: #d8f2ca;
+        background-color: #000000;
+        border-radius: 18px;
+        font-size: 21px;
+        /* align-items: center; */
+        border: solid 1px rgb(232, 229, 229);
+        cursor: pointer;
+        font-family: 'Balthazar', serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(10, 32, 11);
+    }
+
+    .right {
+        padding: 6px 6px;
+    }
+
+    .container {
+        border: 2px solid white;
+        position: absolute;
+        display: inline-block;
+        margin: 69px 69px;
+        padding: 23px;
+        border-radius: 35px;
+        width: 35%;
+    }
+
+    h1 {
+        color: #d8f2ca;
+        font-size: 33px;
+        text-align: center;
+    }
+
+    .form-group input {
+        display: block;
+        width: 79%;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 26px;
+        font-family: 'Balthazar', serif;
+        font-weight: 600;
+        margin: 7px auto;
+        padding: 2px;
+        border-radius: 6px;
+        border: 1px solid black;
+    }
+
+    .container button {
+        display: block;
+        width: 55%;
+        margin: 8px auto;
+        border-radius: 6px;
+        font-size: 22px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="gym logo.jpg" alt="">
+            <div>
+                Gym Fitness
+            </div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a> </li>
+                <li><a href="#"> Contact Us</a> </li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button><button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym in Delhi. Now open!! </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="Name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="Age" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Gender" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="Locality" placeholder="Enter your Locality">
+            </div>
+            <button class="btn" type="submit">Submit Now
+            </button>
+            <button class="btn" type="reset">Reset Now
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
